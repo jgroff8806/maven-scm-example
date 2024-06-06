@@ -16,8 +16,17 @@
     </dependency>
   </dependencies>
   <scm>
-    <connection>scm:git:git://github.com/yourusername/your-repo.git</connection>
-    <developerConnection>scm:git:ssh://github.com/yourusername/your-repo.git</developerConnection>
-    <url>https://github.com/yourusername/your-repo</url>
+    <connection>scm:git:https://github.com/jgroff8806/maven-scm-example.git</connection>
+    <developerConnection>scm:git:https://github.com/jgroff8806/maven-scm-example.git</developerConnection>
+    <url>https://github.com/jgroff8806/maven-scm-example</url>
   </scm>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-scm-plugin</artifactId>
+        <version>1.11.3</version>
+      </plugin>
+    </plugins>
+  </build>
 </project>
